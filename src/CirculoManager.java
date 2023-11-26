@@ -14,7 +14,6 @@ public class CirculoManager {
     private Random random;
     private Timer circuloTimer;
     private int maxCirculos = 25;
-    Personagem personagem;
 
     public CirculoManager(SimpEco simpEco) {
         circulos = new ArrayList<>();
@@ -42,10 +41,6 @@ public class CirculoManager {
 
     public List<Point> getCirculos() {
         return circulos;
-    }
-
-    public void setPersonagem(Personagem personagem) {
-        this.personagem = personagem;
     }
 
     public void drawCirculos(Graphics g) {

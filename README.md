@@ -3,6 +3,9 @@
 ![Logo PokeEco](src\assetsREADME\logopoke.png)
 
 
+- **Aluno: Miquéias Ferreira Barros**
+- Matrícula: 01595460
+
 O Projeto SimpEco nomeado de PokeEco é um simulador de ecossistema inspirado no universo Pokémon, duas espécies de Pokémon interagem entre si e com o ambiente. Este projeto é uma oportunidade de observar de forma prática os princípios da programação orientada a objetos em Java, incluindo conceitos como encapsulamento, herança, polimorfismo e associação. Através deste ambiente virtual, você pode observar como esses princípios fundamentais são aplicados na modelagem de um ecossistema onde duas espécies de Pokémon coexistem.
 
 ---
