@@ -24,9 +24,9 @@ O Projeto SimpEco nomeado de PokeEco é um simulador de ecossistema inspirado no
 
 ![Demonstração do SimpEco](src\assetsREADME\example.gif)
 
-## Erro do Personagem
+## Remoção do Personagem
 
-Atualmente, no SimpEco, o personagem não consegue reduzir a vida dos Pokémon ao interagir com eles, ao contrário do que acontece quando os Pokémon colidem entre si. Porém isso não afeta o projeto em si, ja que o personagem é uma feature apenas para teste, o principal são apenas os animais.
+A feature do personagem foi removida para uma otimização do código principa, ou seja dos animais.
 
 ### Controles (Apenas quando para teste.)
 

@@ -1,3 +1,7 @@
+package pokeeco.floresta;
+
+import main.java.br.nassau.pokeeco.SimpEco;
+
 public class SimpEcoMain {
     public static void main(String[] args) {
         SimpEco simpEco = new SimpEco();

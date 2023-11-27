@@ -1,3 +1,4 @@
+package main.java.br.nassau.pokeeco;
 import java.awt.Point;
 
 public class Circulo {

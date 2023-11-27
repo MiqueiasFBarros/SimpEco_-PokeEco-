@@ -1,3 +1,4 @@
+package main.java.br.nassau.pokeeco;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

@@ -1,3 +1,4 @@
+package main.java.br.nassau.pokeeco;
 import java.awt.*;
 import javax.swing.ImageIcon;
 import java.util.Random;

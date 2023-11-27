@@ -1,3 +1,4 @@
+package main.java.br.nassau.pokeeco;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Iterator;
