@@ -22,7 +22,7 @@ O Projeto SimpEco nomeado de PokeEco é um simulador de ecossistema inspirado no
 
 ## Demonstração
 
-![Demonstração do SimpEco](src\assetsREADME\example.gif)
+![Demonstração do SimpEco](https://github.com/MiqueiasFBarros/SimpEco_-PokeEco-/blob/main/src/assetsREADME/example.gif)
 
 ## Remoção do Personagem
 
