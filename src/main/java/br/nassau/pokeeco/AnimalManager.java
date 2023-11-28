@@ -1,4 +1,5 @@
 package main.java.br.nassau.pokeeco;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -32,12 +33,12 @@ public class AnimalManager {
 
     public void moveAnimais() {
         for (Animal animal : animais) {
-            if (animal.getVida() > 0) { 
+            if (animal.getVida() > 0) {
                 animal.moveAleatoriamente();
             }
         }
     }
-    
+
     public void checkAnimalCollisions() {
         for (int i = 0; i < animais.size(); i++) {
             Animal animal1 = animais.get(i);
@@ -50,17 +51,17 @@ public class AnimalManager {
             }
         }
     }
-    
+
     public void checkBlueDotCollisions() {
-        CirculoManager circuloManager = (CirculoManager) simpEco.getCirculoManager();
+        CirculoManager circuloManager = simpEco.getCirculoManager();
         Iterator<Point> it = circuloManager.getCirculos().iterator();
-    
+
         while (it.hasNext()) {
             Point circulo = it.next();
             for (Animal animal : animais) {
                 Rectangle animalBounds = new Rectangle(animal.getX(), animal.getY(), 64, 72);
                 Rectangle circuloBounds = new Rectangle(circulo.x, circulo.y, 20, 20);
-    
+
                 if (animalBounds.intersects(circuloBounds) && animal.getVida() < vidaMinimaParaPegarPontoAzul) {
                     animal.aumentarVida(30);
                     it.remove();
@@ -68,9 +69,9 @@ public class AnimalManager {
             }
         }
     }
-    
+
     public void checkAnimalHealth() {
-        if (!((CirculoManager) simpEco.getCirculoManager()).getCirculos().isEmpty()) {
+        if (!simpEco.getCirculoManager().getCirculos().isEmpty()) {
             tempoSemPontoAzulAnimal1++;
             tempoSemPontoAzulAnimal2++;
 
@@ -90,11 +91,11 @@ public class AnimalManager {
             reviverAnimais();
         }
     }
-    
+
     public List<Animal> getAnimais() {
         return animais;
     }
-    
+
     public void reviverAnimais() {
         if (animais.size() < 2) {
             int x = random.nextInt(800 - 20);

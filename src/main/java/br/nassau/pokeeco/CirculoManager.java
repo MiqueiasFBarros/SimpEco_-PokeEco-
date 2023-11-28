@@ -1,4 +1,5 @@
 package main.java.br.nassau.pokeeco;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,8 +11,8 @@ import java.util.Random;
 
 public class CirculoManager {
     private List<Point> circulos;
-    private Image imagemCirculo; 
-    private double tamanhoImagem = 1.6; 
+    private Image imagemCirculo;
+    private double tamanhoImagem = 1.6;
     private Random random;
     private Timer circuloTimer;
     private int maxCirculos = 25;
@@ -52,19 +53,20 @@ public class CirculoManager {
         }
     }
 
-    public void checkCollisions(AnimalManager animalManager) {
+    // Correção para aceitar uma lista de qualquer tipo que estenda EntidadeEcossistema
+    public void checkCollisions(List<? extends EntidadeEcossistema> entidades) {
         Iterator<Point> iterator = circulos.iterator();
 
         while (iterator.hasNext()) {
             Point circulo = iterator.next();
             Rectangle circuloBounds = new Rectangle(circulo.x, circulo.y, 40, 40);
-    
-            for (Animal animal : animalManager.getAnimais()) {
-                Rectangle animalBounds = new Rectangle(animal.getX(), animal.getY(), 64, 72);
-    
-                if (animalBounds.intersects(circuloBounds)) {
+
+            for (EntidadeEcossistema entidade : entidades) {
+                Rectangle entidadeBounds = new Rectangle(entidade.getX(), entidade.getY(), 64, 72);
+
+                if (entidadeBounds.intersects(circuloBounds)) {
                     iterator.remove();
-                    animal.aumentarVida(30); 
+                    entidade.aumentarVida(30);
                     break;
                 }
             }

@@ -1,4 +1,5 @@
 package main.java.br.nassau.pokeeco;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -13,7 +14,8 @@ public class SimpEco extends JPanel implements ActionListener {
     private AnimalManager animalManager;
 
     public SimpEco() {
-        imagemFundo = new ImageIcon("src\\\\assets\\grass.jpg");
+        // Utilize caminhos relativos ou externos para evitar problemas ao mover o projeto
+        imagemFundo = new ImageIcon("src/assets/grass.jpg");
         setPreferredSize(new Dimension(windowWidth, windowHeight));
 
         circuloManager = new CirculoManager(this);
@@ -35,17 +37,14 @@ public class SimpEco extends JPanel implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        circuloManager.checkCollisions(animalManager); 
+        circuloManager.checkCollisions(animalManager.getAnimais());
         animalManager.moveAnimais();
         animalManager.checkAnimalCollisions();
         animalManager.checkBlueDotCollisions();
         animalManager.checkAnimalHealth();
-        circuloManager.checkCollisions(animalManager); 
-        animalManager.moveAnimais();
-        animalManager.checkAnimalCollisions();
-        animalManager.checkAnimalHealth();
         repaint();
     }
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -66,7 +65,5 @@ public class SimpEco extends JPanel implements ActionListener {
         return animalManager;
     }
 
-    public void checkBlueDotCollisions() {
-        circuloManager.checkCollisions(animalManager);
-    }
+    // Removido o método checkBlueDotCollisions, pois a lógica já está no actionPerformed
 }

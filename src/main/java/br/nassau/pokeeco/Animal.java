@@ -1,9 +1,10 @@
 package main.java.br.nassau.pokeeco;
+
+import javax.swing.*;
 import java.awt.*;
-import javax.swing.ImageIcon;
 import java.util.Random;
 
-public class Animal {
+public class Animal implements EntidadeEcossistema {
     private int x;
     private int y;
     private int vida;
@@ -87,5 +88,11 @@ public class Animal {
         if (vida < 0) {
             vida = 0;
         }
+    }
+
+    @Override
+    public boolean intersects(EntidadeEcossistema outraEntidade) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'intersects'");
     }
 }
