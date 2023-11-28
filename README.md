@@ -1,6 +1,6 @@
 # PokeEco - Simulador de Ecossistema Pokémon
 
-![Logo PokeEco](src\assetsREADME\logopoke.png)
+![Logo PokeEco](https://github.com/MiqueiasFBarros/SimpEco_-PokeEco-/blob/main/src/assetsREADME/logopoke.png)
 
 
 - **Aluno: Miquéias Ferreira Barros**
