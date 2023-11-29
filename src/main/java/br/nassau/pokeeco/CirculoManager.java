@@ -53,7 +53,7 @@ public class CirculoManager {
         }
     }
 
-    // Correção para aceitar uma lista de qualquer tipo que estenda EntidadeEcossistema
+   
     public void checkCollisions(List<? extends EntidadeEcossistema> entidades) {
         Iterator<Point> iterator = circulos.iterator();
 
