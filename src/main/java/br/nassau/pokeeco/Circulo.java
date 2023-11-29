@@ -36,28 +36,28 @@ public class Circulo implements EntidadeEcossistema {
 
     @Override
     public int getVida() {
-        // Se um círculo tem "vida", você pode retornar um valor apropriado aqui.
+      
         return 0;
     }
 
     @Override
     public void moveAleatoriamente() {
-        // A implementação específica para um círculo movendo-se aleatoriamente
+        
     }
 
     @Override
     public void reduzirVida(int quantidade) {
-        // A implementação específica para reduzir a "vida" de um círculo
+
     }
 
     @Override
     public void aumentarVida(int quantidade) {
-        // A implementação específica para aumentar a "vida" de um círculo
+       
     }
 
     @Override
     public void draw(Graphics g) {
-        // A implementação específica para desenhar um círculo
+       
     }
 
     @Override
