@@ -14,7 +14,7 @@ public class SimpEco extends JPanel implements ActionListener {
     private AnimalManager animalManager;
 
     public SimpEco() {
-        // Utilize caminhos relativos ou externos para evitar problemas ao mover o projeto
+    
         imagemFundo = new ImageIcon("src/assets/grass.jpg");
         setPreferredSize(new Dimension(windowWidth, windowHeight));
 
@@ -65,5 +65,4 @@ public class SimpEco extends JPanel implements ActionListener {
         return animalManager;
     }
 
-    // Removido o método checkBlueDotCollisions, pois a lógica já está no actionPerformed
 }
