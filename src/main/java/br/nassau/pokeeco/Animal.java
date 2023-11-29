@@ -92,7 +92,7 @@ public class Animal implements EntidadeEcossistema {
 
     @Override
     public boolean intersects(EntidadeEcossistema outraEntidade) {
-        // TODO Auto-generated method stub
+
         throw new UnsupportedOperationException("Unimplemented method 'intersects'");
     }
 }
