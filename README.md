@@ -12,7 +12,6 @@ O Projeto SimpEco nomeado de PokeEco é um simulador de ecossistema inspirado no
 
 ## Funcionalidades
 
-- **Personagem Pokémon:** Crie e controle um personagem no ambiente Pokémon.
 - **Interação Pokémon:** Observe a interação entre diferentes Pokémon no ambiente.
 - **Vida dos Pokémon:** Pokémon perdem vida quando colidem entre si.
 - **Coleta de Frutas:** Pokémon podem coletar frutas para recuperar vida.
@@ -28,10 +27,9 @@ O Projeto SimpEco nomeado de PokeEco é um simulador de ecossistema inspirado no
 
 A feature do personagem foi removida para uma otimização do código principal, ou seja dos animais.
 
-### Controles (Apenas quando para teste.)
+### Controles 
 
-- Pressione F1 para alternar a visibilidade do personagem.
-- Use as teclas W, A, S, e D para mover o personagem.
+- Não há necessidade de controlar pois é tudo automático :)
 
 ### Como Executar o Projeto
 
