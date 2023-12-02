@@ -42,4 +42,4 @@ A feature do personagem foi removida para uma otimização do código principal,
 3. Abra o projeto em sua IDE Java favorita.
 
 4. Execute a classe `SimpEcoMain.java` para iniciar a simulação. 
-4.1. `SimpEcoMain.java` se localiza na pasta `src\main\floresta\SimpEcoMain.java`
+4.1. `SimpEcoMain.java` se localiza na pasta `src\pokeeco\floresta\SimpEcoMain.java`
