@@ -20,11 +20,6 @@ A ideia é que os animais sao os Pokémon's, e as frutas que aparecem a vegetaç
 - **Controle Automático:** A quantidade de Pokémon e frutas no ambiente é controlada automaticamente.
 
 ---
-
-## Demonstração
-
-![Demonstração do SimpEco](https://github.com/MiqueiasFBarros/SimpEco_-PokeEco-/blob/main/src/assetsREADME/example.gif)
-
 ## Remoção do Personagem
 
 A feature do personagem foi removida para uma otimização do código principal, ou seja dos animais.
